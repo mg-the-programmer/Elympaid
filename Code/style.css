@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope";
+
+  /* box-sizing: border-box; */
+}
+body {
+  overflow-x: hidden;
+}
+
+.heroSection > .heroBg {
+  background-image: url("assets/heroBG.svg");
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navContainer > ul {
+  display: flex;
+  flex-direction: row;
+}
+.navContainer {
+  /* position: absolute;
+  top:82px; */
+  margin-top: 20px;
+}
+
+.navContainer ul > li > a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 10px 20px;
+  /* identical to box height */
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.underLine {
+  display: inline-block;
+  position: relative;
+}
+.underLine:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fcab11;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.underLine:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.headerContainer {
+  position: absolute;
+  left: 270px;
+  top: 40px;
+  width: 1286px;
+  height: 101.75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .navContainer > ul > li > a:hover,
+.navContainer > ul > li > a:focus {
+  text-decoration: underline;
+  border-bottom: 2px solid #fcab11;
+  border-radius: 1px;
+} */
+
+.mainWord {
+  position: absolute;
+  width: 700px;
+  height: 321px;
+  left: 278px;
+  top: 175px;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 100px;
+  /* or 119% */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.subWord {
+  position: absolute;
+  width: 525.33px;
+  height: 55px;
+  left: 278px;
+  top: 490px;
+
+  /* Body Text */
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 138% */
+
+  color: #ffffff;
+}
+
+.appLinks {
+  position: absolute;
+  width: 585.08px;
+  height: 77px;
+  left: 278px;
+  top: 590px;
+  display: flex;
+  gap: 18px;
+}
+
+.ratingCon {
+  position: absolute;
+  width: 585px;
+  height: 185px;
+  left: 278px;
+  top: 700px;
+  padding: 15px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 9px;
+}
+
+.ratingTitle {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.ratingComment {
+  margin: 2px 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.userName {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.bgVector {
+  position: absolute;
+  width: 418.5px;
+  height: 352.71px;
+  left: 1050.72px;
+  top: 554.67px;
+
+  /* background: #fcab11; */
+  /* transform: rotate(-176.49deg); */
+}
+
+.iPhone {
+  position: absolute;
+  width: 360.7px;
+  height: 729.32px;
+  left: 1214px;
+  top: 150px;
+
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
+}
+
+/* .downArrowContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
+.downArrow {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  left: 988px;
+  top: 860px;
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  /* text-align: center; */
+}
+@keyframes example {
+  0% {
+    top: 860px;
+  }
+  50% {
+    top: 880px;
+  }
+  100% {
+    top: 860px;
+  }
+}
+
+.aboutHeading {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 74px;
+  /* identical to box height */
+
+  text-align: center;
+  margin-top: 69px;
+}
+
+.leftContent {
+  width: 523px;
+  /* height: 461px; */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 46px;
+  /* identical to box height, or 190% */
+
+  text-transform: capitalize;
+  color: #000000;
+}
+.heading0 {
+  color: #fcab11;
+  font-weight: 300;
+  font-size: 27.4687px;
+  line-height: 52px;
+}
+
+.heading2 {
+  /* margin: 100px; */
+  font-weight: 700;
+  font-size: 41.203px;
+  line-height: 52px;
+}
+.heading3 {
+  font-weight: 400;
+  font-size: 27.9341px;
+  line-height: 47px;
+}
+.heading4 {
+  font-weight: 700;
+  font-size: 27.9341px;
+  line-height: 47px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 54px;
+}
+
+/* .aboutImg {
+  max-width: 100%;
+  height: auto;
+} */
+
+.faqs {
+  margin-top: 66px;
+}
+
+.faqHeading {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 74px;
+  margin-bottom: 26px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+/* .questionContainer {
+  margin: 0 auto;
+  width: 60%;
+  height: 96px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  margin-bottom: 30px;
+} */
+
+.questionContainer {
+  color: #fff;
+  margin: 0 auto;
+  width: 60%;
+  /* height: 10px;  */
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  /* margin-bottom: 30px; */
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  position: relative;
+  margin-bottom: 30px;
+  /* clear: both; */
+  /* overflow: hidden; */
+}
+
+summary {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #000000;
+  /* padding: 0.5em 1.3rem; */
+  list-style: none;
+  text-align: left;
+  /* margin-right: 100px; */
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  position: absolute;
+  content: "\002B";
+  right: 40px;
+}
+
+details[open] {
+  height: auto;
+  /* margin-bottom: 0.5em; */
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+.answer {
+  color: black;
+  font-size: 24px;
+  /* border-top: 2px black solid; */
+  /* width: 100%; */
+  margin-top: 15px;
+}
